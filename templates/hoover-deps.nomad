@@ -383,6 +383,8 @@ job "hoover-deps" {
         NLP_SERVICE_PRESET = "${config.nlp_preset}"
         NLP_SERVICE_FALLBACK_LANGUAGE = "${config.nlp_fallback_language}"
         NLP_SPACY_TEXT_LIMIT = "${config.nlp_spacy_text_limit}"
+        GUNICORN_WORKERS = ${config.nlp_gunicorn_workers}
+        GUNICORN_THREADS = ${config.nlp_gunicorn_threads}
       }
       resources {
         memory = ${config.nlp_memory_limit}
