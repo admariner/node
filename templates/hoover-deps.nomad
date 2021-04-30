@@ -380,7 +380,9 @@ job "hoover-deps" {
         memory_hard_limit = ${4 * config.nlp_memory_limit}
       }
       env {
-        NLP_SERVICE_PRESET = "full_sm"
+        NLP_SERVICE_PRESET = "${config.nlp_preset}"
+        NLP_SERVICE_FALLBACK_LANGUAGE = "${config.nlp_fallback_language}"
+        NLP_SPACY_TEXT_LIMIT = "${config.nlp_spacy_text_limit}"
       }
       resources {
         memory = ${config.nlp_memory_limit}

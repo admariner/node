@@ -198,6 +198,10 @@ class Configuration:
         self.snoop_max_result_window = self.ini.getint('snoop', 'max_result_window', fallback=10000)
         self.snoop_refresh_interval = self.ini.get('snoop', 'refresh_interval', fallback="6s")
 
+        self.nlp_fallback_language = self.ini.get('nlp_service', 'fallback_language', fallback="en")
+        self.nlp_preset = self.ini.get('nlp_service', 'preset', fallback="full_lg")
+        self.nlp_spacy_text_limit = self.ini.get('nlp_service', 'spacy_text_limit', fallback=100000)
+
         self.check_interval = self.ini.get('deploy', 'check_interval', fallback='24s')
         self.check_timeout = self.ini.get('deploy', 'check_timeout', fallback='20s')
         self.wait_max = self.ini.getfloat('deploy', 'wait_max_sec', fallback=300)
