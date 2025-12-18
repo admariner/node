@@ -1,5 +1,12 @@
 # Liquid Investigations Change Log
 
+## v0.32.5 (2025-12-18)
+
+### Bug Fixes
+
+- Fixed issue with Wiki.js to XWiki import script where the page paths would not contain the full folder structure.
+- Fixed issue where deployment would block on the `pgwatch2` container. `pgwatch2` was an internal database monitoring tool that is now removed.
+
 ## v0.32.3 (2025-04-24)
 
 ### Bug Fixes
