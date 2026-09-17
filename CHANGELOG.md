@@ -1,5 +1,11 @@
 # Liquid Investigations Change Log
 
+## v0.32.6 (2026-09-17)
+
+### Bug Fixes
+
+- Fixed installation issue with missing docker image for minio.
+
 ## v0.32.5 (2025-12-18)
 
 ### Bug Fixes
